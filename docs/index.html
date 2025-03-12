@@ -12,24 +12,46 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #f8f5e4;
+            background-color: #f5f5f5;
         }
         .container {
             background-color: white;
             padding: 30px;
             border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         h1, h2 {
-            color: #703232;
+            color: #2c3e50;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
         }
-        .section {
-            margin-bottom: 30px;
+        .feature-list {
+            list-style-type: none;
+            padding-left: 0;
         }
-        .footer {
-            text-align: center;
-            margin-top: 50px;
-            color: #666;
+        .feature-list li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+        .feature-list li:before {
+            content: "•";
+            color: #3498db;
+            position: absolute;
+            left: 0;
+        }
+        .contact {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -37,38 +59,24 @@
     <div class="container">
         <h1>随身拜-木鱼功德</h1>
         
-        <div class="section">
-            <h2>应用介绍</h2>
-            <p>随身拜-木鱼功德是一款简约而富有禅意的修行应用。通过数字化的木鱼，让您随时随地都能静心修行，积累功德。</p>
-        </div>
+        <h2>应用介绍</h2>
+        <p>随身拜-木鱼功德是一款简洁优雅的数字木鱼应用，帮助用户在现代生活中保持内心的平静与善念。无论您是在工作间隙还是冥想时刻，都可以通过轻轻敲击木鱼来积累功德。</p>
 
-        <div class="section">
-            <h2>主要功能</h2>
-            <ul>
-                <li>精美木鱼：传统木鱼的数字化呈现</li>
-                <li>功德计数：记录每一次虔诚的敲击</li>
-                <li>双重模式：支持手动敲击和自动修行</li>
-                <li>桌面小组件：让木鱼常伴左右</li>
-            </ul>
-        </div>
+        <h2>主要功能</h2>
+        <ul class="feature-list">
+            <li>简洁的界面设计，专注于木鱼敲击体验</li>
+            <li>优雅的动画效果和震动反馈</li>
+            <li>桌面小组件支持，随时查看功德</li>
+        </ul>
 
-        <div class="section">
-            <h2>使用说明</h2>
-            <ul>
-                <li>轻触木鱼即可敲击</li>
-                <li>长按木鱼可切换自动模式</li>
-                <li>添加小组件让修行更便捷</li>
-            </ul>
-        </div>
+        <h2>使用说明</h2>
+        <p>打开应用后，您可以通过轻轻点击木鱼图案来敲击木鱼。每次敲击都会伴随着悦耳的木鱼声和优雅的动画效果。</p>
 
-        <div class="section">
-            <h2>联系与反馈</h2>
+        <div class="contact">
+            <h2>联系我们</h2>
             <p>如果您在使用过程中遇到任何问题，或有任何建议，请通过以下方式联系我们：</p>
-            <p>邮箱：[您的邮箱地址]</p>
-        </div>
-
-        <div class="footer">
-            <p>© 2024 随身拜-木鱼功德 版权所有</p>
+            <p>邮箱：<a href="mailto:support@woodfish.app">support@woodfish.app</a></p>
+            <p><a href="privacy.html">隐私政策</a></p>
         </div>
     </div>
 </body>
