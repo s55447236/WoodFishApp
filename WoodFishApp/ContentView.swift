@@ -561,7 +561,12 @@ struct ContentView: View {
                     Button(action: {
                         let text = "我在「随身拜-木鱼功德」已经积累了\(meritManager.merit)功德！"
                         let av = UIActivityViewController(activityItems: [text], applicationActivities: nil)
-                        UIApplication.shared.windows.first?.rootViewController?.present(av, animated: true)
+                        
+                        // 获取当前窗口并展示分享界面
+                        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+                           let window = windowScene.windows.first {
+                            window.rootViewController?.present(av, animated: true)
+                        }
                     }) {
                         Image(systemName: "square.and.arrow.up")
                             .font(.system(size: 22))

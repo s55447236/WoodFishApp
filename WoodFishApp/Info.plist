@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>BGTaskSchedulerPermittedIdentifiers</key>
+    <array>
+        <string>com.xumengzhang.WoodFishApp.refresh</string>
+        <string>com.xumengzhang.WoodFishApp.processing</string>
+    </array>
+    <key>UIBackgroundModes</key>
+    <array>
+        <string>fetch</string>
+        <string>processing</string>
+    </array>
+    <key>UIAppFonts</key>
+    <array>
+        <string>SourceHanSerifCN-Heavy.otf</string>
+    </array>
+    <key>CFBundleDisplayName</key>
+    <string>随身拜-木鱼功德</string>
+    <key>NSExtensionPointIdentifier</key>
+    <string>com.apple.widgetkit-extension</string>
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>https</string>
+            </array>
+            <key>CFBundleURLName</key>
+            <string>WoodFishApp</string>
+        </dict>
+    </array>
+</dict>
+</plist> 
